@@ -1,0 +1,35 @@
+@import "reset";
+@import "variables";
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: rgb(250, 250, 250);
+
+    #root {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .attribution {
+            width: max-content;
+            font-size: 0.75rem;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+
+            a {
+                color: $primary;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        #root {
+            padding: 4rem 0;
+        }
+    }
+}

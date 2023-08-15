@@ -1,0 +1,22 @@
+// Breakpoints
+// 600px and DOWN: phones
+// 600px and UP: portrait tablets and large phones
+// 768px and up: landscape tablets
+// 992px and up: laptops/desktops
+// 1200px and up: large laptops and desktops
+
+// Colors
+$primary: rgb(10, 49, 123);
+$on-primary: rgb(255, 255, 255);
+
+$background: rgb(255, 255, 255);
+$on-background: rgb(28, 32, 43);
+$on-background-primary: rgb(94, 103, 120);
+
+$surface: rgb(247, 250, 253);
+$on-surface: rgb(94, 103, 120);
+$on-surface-post-content: rgb(94, 103, 120);
+$on-surface-user-name: rgb(28, 32, 43);
+$on-surface-border: rgb(221, 231, 238);
+
+$secondary: rgb(246, 83, 81);
