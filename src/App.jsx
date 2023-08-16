@@ -134,11 +134,10 @@ export const App = () => {
     }
 
     const MarkAllAsRead = () => {
-        let newList = notificationList.map((item) => {
+        setNotificationList(notificationList.map((item) => {
             item.isRead = true
             return item
-        })
-        setNotificationList(newList)
+        }))
     }
 
     return (
