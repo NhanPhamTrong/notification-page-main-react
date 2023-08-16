@@ -102,7 +102,7 @@ const GetNotificationContent = (notification) => {
                         <span className="content"> commented on your picture</span>
                         <span className="dot"><i className="fa-solid fa-circle fa-xs"></i></span>
                     </p>
-                    <img src={notification.picture} alt={notification.userAvatar + " commented"} />
+                    <img src={notification.picture} alt={notification.userAvatar + "'s comment"} />
                     <p className="time-from-posting">{CalculateTime(notification.time)}</p>
                 </>
             )
