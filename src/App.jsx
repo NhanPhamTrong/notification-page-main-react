@@ -117,7 +117,7 @@ export const App = () => {
 
     const ClickNotification = (e) => {
         let newList = notificationList.map((item) => {
-            if (item.id === parseInt(e.currentTarget.getAttribute("name"))) {
+            if (item.id === parseInt(e.currentTarget.getAttribute("id"))) {
                 item.isRead = true
             }
             return item
@@ -154,7 +154,7 @@ export const App = () => {
                     {notificationList.map((item, index) => {
                         return (
                             <li key={index}>
-                                <div className={item.type + (item.isRead ? " read" : "")} name={item.id} onClick={ClickNotification}>
+                                <div className={item.type + (item.isRead ? " read" : "")} id={item.id} onClick={ClickNotification}>
                                     {GetNotificationContent(item)}
                                 </div>
                             </li>
